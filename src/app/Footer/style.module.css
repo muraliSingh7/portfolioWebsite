@@ -88,4 +88,11 @@
     .contactInfo p {
         margin-bottom: 0.75rem;
     }
+
+    .telephoneEmailLink {
+        font-size: 1.05rem !important;
+        line-height: 1.5;
+        color: white !important;
+        text-decoration: none !important;
+    }
 }

@@ -2,22 +2,28 @@ import ExperienceInfo from "./experienceInfo";
 
 const experienceData: ExperienceInfo[] = [
     {
-        companyName: 'BrandKettle',
-        jobTitle: 'Software Developer | Internship',
-        startDate: 'September-2023',
-        endDate: 'Decemeber-2023',
-    },
-    {
-        companyName: 'Trawl International Solutions',
-        jobTitle: 'Lead Software Developer',
-        startDate: 'April-2024',
-        endDate: 'June-2024',
+        companyName: 'Twenty (YC backed Salesforce alternative)',
+        jobTitle: 'Open Source Contributor',
+        startDate: `Dec'24`,
+        endDate: `Dec'24`,
     },
     {
         companyName: 'GoldsmithAI',
         jobTitle: 'Software Developer',
-        startDate: 'July-2024',
-        endDate: 'November-2024',
+        startDate: `Jul'24`,
+        endDate: `Nov'24`,
+    },
+    {
+        companyName: 'Trawl International Solutions',
+        jobTitle: 'Lead Software Developer',
+        startDate: `Apr'24`,
+        endDate: `Jun'24`,
+    },
+    {
+        companyName: 'BrandKettle',
+        jobTitle: 'Software Developer | Internship',
+        startDate: `Sept'23`,
+        endDate: `Dec'23`,
     }
 ];
 

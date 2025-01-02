@@ -13,9 +13,9 @@ export default function Education() {
                 <FontAwesomeIcon icon={faGraduationCap} />
                 <span>Education</span>
             </h1>
-            <InstitutionCard index={0} srcImage={secondarySchoolImage} courseName='Secondary School Certification(SSC)' institutionName='St.Thomas High School' yearOfCompletion='2016'/>
-            <InstitutionCard index={1} srcImage={higherSecondarySchoolImage} courseName='Higher Secondary Certification(HSC)' institutionName='B.K. Birla College of Arts, Science & Commerce, Kalyan' yearOfCompletion='2018'/>
             <InstitutionCard index={2} srcImage={collegeImage} courseName='Bachelor Of Technology In Electronics And Telecommunications' institutionName='K. J. Somaiya College of Engineering' yearOfCompletion='2022'/>
+            <InstitutionCard index={1} srcImage={higherSecondarySchoolImage} courseName='Higher Secondary Certification(HSC)' institutionName='B.K. Birla College of Arts, Science & Commerce, Kalyan' yearOfCompletion='2018'/>
+            <InstitutionCard index={0} srcImage={secondarySchoolImage} courseName='Secondary School Certification(SSC)' institutionName='St.Thomas High School' yearOfCompletion='2016'/>
         </div>
     );
 }

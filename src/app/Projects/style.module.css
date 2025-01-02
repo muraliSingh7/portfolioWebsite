@@ -45,7 +45,7 @@
 .projectsContainer {
     overflow: hidden;
     position: relative;
-    height: 700px;
+    height: 900px;
     border-color: #4b5563;
     width: 100%;
     padding-top: 15px;
@@ -68,4 +68,20 @@
     .container {
         padding: 20px 100px 50px 100px;
     }
+
+    .projectsContainer {
+        height: 600px;
+    }
+
+    @keyframes slide {
+        0% {
+            left: 100%;
+        }
+    
+        100% {
+            left: -6336px;
+            /* card width is 768px because image width is 500px and gap is 32px. Total 7 cards is 8 * 768 = 6144px and 6 * 32 = 192px.Remember if you want to add more cards, you need to add more 32px and 500px */
+        }
+    }
+    
 }

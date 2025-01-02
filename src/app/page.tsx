@@ -12,10 +12,10 @@ export default function Home() {
     <>
     <CustomNavbar></CustomNavbar>
     <AboutMe></AboutMe>
-    <Education></Education>
+    <Experience></Experience>
     <Skills></Skills>
     <Projects></Projects>
-    <Experience></Experience>
+    <Education></Education>
     <ContactMe></ContactMe>
     <Footer></Footer>
     </>
