@@ -21,7 +21,7 @@ const experienceData: ExperienceInfo[] = [
     },
     {
         companyName: 'BrandKettle',
-        jobTitle: 'Software Developer | Internship',
+        jobTitle: 'Software Developer Intern',
         startDate: `Sept'23`,
         endDate: `Dec'23`,
     }

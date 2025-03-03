@@ -1,4 +1,3 @@
-import styles from '../Education/style.module.css';
 import InstitutionCard from './components/institutionCard/institutionCard';
 import secondarySchoolImage from '../../../public/secondarySchoolLogo.png';
 import higherSecondarySchoolImage from '../../../public/higherSecondarySchoolLogo.png';
@@ -8,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Education() {
     return (
-        <div id="education" className={styles.education}>
-            <h1 className={styles.title}>
+        <div id="education" className="sectionContainer">
+            <h1 className="sectionTitle">
                 <FontAwesomeIcon icon={faGraduationCap} />
                 <span>Education</span>
             </h1>

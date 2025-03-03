@@ -13,12 +13,11 @@ const skillCards: SkillInfo[] = [
     { skillIconImage: "https://img.icons8.com/color/48/000000/mongodb.png", skillName: "MongoDB" },
     { skillIconImage: "https://img.icons8.com/color/48/000000/flutter.png", skillName: "Flutter" },
     { skillIconImage: "https://img.icons8.com/color/48/000000/firebase.png", skillName: "Firebase" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png", skillName: "Java" },
     { skillIconImage: github, skillName: "GitHub" },
     { skillIconImage: "https://img.icons8.com/?size=48&id=EzPCiQUqWWEa&format=png", skillName: "Bootstrap" },
-    { skillIconImage: "https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png", skillName: "Tailwind CSS" },
     { skillIconImage: "https://img.icons8.com/?size=48&id=asWSSTBrDlTW&format=png", skillName: "React" },
     { skillIconImage: nextjs, skillName: "NextJS" },
+    { skillIconImage: "https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png", skillName: "Tailwind CSS" },
 ];
 
 export default skillCards;

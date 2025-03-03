@@ -1,98 +1,112 @@
 .footer {
-    background-color: #001219;
-    color: white;
-    font-family: revert;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.contactInfo span {
-    margin-right: 10px;
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.contactInfo a {
-    font-size: 1.8rem;
-    color: #000000;
+.socialIconsContainer {
+  display: flex;
+  gap: 20px;
 }
 
-.img {
-    vertical-align: sub;
+.socialIcons,
+.emailIcon,
+.telephoneIcon {
+  color: #cbfc2a;
+  font-size: 1.5rem;
+}
+
+.topmateLogo {
+  vertical-align: sub;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.telephone,
+.email {
+  color: #cbfc2a;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .heartIcon {
-    color: #ff0000;
-}
-
-.footer>p:last-child {
-    margin: 10px 0px;
-    text-align: center;
+  color: #ff0000;
 }
 
 .ownerName {
-    font-weight: bold;
-    color: #ea9c8b;
+  font-weight: bold;
+  color: #cbfc2a;
 }
 
-.socialIcons {
-    color: #98e2ff;
+@media screen and (min-width: 320px) {
+  .footer {
+    padding: 20px;
+  }
 }
 
-@media screen and (min-width:320px) {
-    .footer {
-        font-weight: 600;
-        padding: 20px 10px 20px 10px;
-    }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 30px;
+    gap: 20px;
+  }
 
-    .contactInfo p:first-child {
-        font-size: 1.7rem;
-        color: #98e2ff;
-    }
-
-    .contactInfo p {
-        margin-bottom: 0.75rem;
-        line-height: 1.5;
-    }
+  .contactInfo,
+  .contactDetails,
+  .telephone,
+  .email {
+    gap: 20px;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .footer {
-        padding: 20px 50px 20px 50px;
-        font-weight: 600;
-    }
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 50px;
+    gap: 30px;
+  }
 
-    .contactInfo p:first-child {
-        font-size: 1.75rem;
-        color: #98e2ff;
-    }
+  .contactInfo {
+    line-height: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+  }
 
-    .contactInfo p {
-        margin-bottom: 0.75rem;
-        line-height: 1.5;
-    }
-}
+  .socialIcons,
+  .emailIcon,
+  .telephoneIcon {
+    font-size: 2rem;
+  }
 
-@media screen and (min-width:1024px) {
-    .footer {
-        padding: 20px 100px 20px 100px;
-    }
+  .topmateLogo{
+    height: 2rem;
+    width: 2rem;
+  }
 
-    .contactInfo {
-        line-height: 10px;
-    }
-
-    .contactInfo p:first-child {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #98e2ff;
-    }
-
-    .contactInfo p {
-        margin-bottom: 0.75rem;
-    }
-
-    .telephoneEmailLink {
-        font-size: 1.05rem !important;
-        line-height: 1.5;
-        color: white !important;
-        text-decoration: none !important;
-    }
+  .contactDetails {
+    flex-direction: row;
+    gap: 40px;
+  }
 }

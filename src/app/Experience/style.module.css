@@ -1,96 +1,65 @@
-.container {
-    background-color: #001219;
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.title {
-    margin-bottom: 1rem;
-    color:#98e2ff;
-}
-
 .experienceTimeline {
-    position: relative;
+  position: relative;
 }
 
 .experienceTimeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    border-radius: 6px;
-    background: #98e2ff;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  width: 6px;
+  border-radius: 6px;
+  background: #638000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
 }
 
 /* view all button */
 .morebtn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .morebtn .btn {
-    position: relative;
-    line-height: 0;
-    padding: 1.6rem 3rem;
-    border-radius: .5em;
-    transition: 0.5s;
-    color: #fff;
-    background: #98e2ff;
-    box-shadow: 0px 5px 10px #98e2ff;
-    text-align: center;
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  background: #638000;
+  box-shadow: 0px 5px 10px #638000;
+  text-align: center;
 }
 
 .morebtn .btn span {
-    font-weight: 600;
-    font-size: 1.7rem;
-    font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
 }
 
 .morebtn .btn i {
-    margin-right: 0.5rem;
-    font-size: 1.5rem;
-    transition: 0.3s;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
 }
 
 .morebtn .btn:hover {
-    background: #98e2ff;
+  background: #638000;
 }
 
 .morebtn .btn:hover i {
-    transform: translateX(-8px);
+  transform: translateX(-8px);
 }
 
-@media screen and (min-width:320px) {
-    .container {
-        padding: 20px 10px 20px 10px;
-        justify-content: center;
-    }
-
-    .experienceTimeline::after {
-        left: 31px;
-    }
+.experienceTimeline::after {
+  left: 31px;
 }
 
-@media screen and (min-width:768px) {
-    .container {
-        padding: 15px 20px 15px 20px;
-    }
-
-    .experienceTimeline::after {
-        left: 50%;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .container {
-        padding: 20px 100px 50px 100px;
-    }
+@media screen and (min-width: 768px) {
+  .experienceTimeline::after {
+    left: 50%;
+  }
 }

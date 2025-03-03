@@ -1,0 +1,110 @@
+.clientCard {
+  background: linear-gradient(180deg, #000000 0%, #2f3a0b 100%) padding-box,
+    linear-gradient(180deg, #638000 0%, #000000 100%) border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+}
+
+.clientReview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top left;
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+}
+
+.review {
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #e3e5dc;
+}
+
+.clientName {
+  font-family: Fira Code;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #e3e5dc;
+}
+
+.clientLocation {
+  font-family: Fira Code;
+  font-weight: 500;
+  color: #e3e5dc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.clientNameAndLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.rating {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .clientCard {
+    border-radius: 12px;
+    max-width: 576px;
+  }
+
+  .clientReview {
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+  }
+
+  .review {
+    font-size: 20px;
+    line-height: 26.24px;
+  }
+
+  .rating {
+    width: 48px;
+    height: 48px;
+  }
+
+  .clientName {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .clientLocation {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

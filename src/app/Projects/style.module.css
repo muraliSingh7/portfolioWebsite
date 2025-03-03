@@ -1,87 +1,23 @@
 .projects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: flex-start;
-    padding: 5px;
     gap: 32px;
-
-    position: absolute;
-    left: 0;
-    animation: slide 25s linear infinite;
 }
 
 .projects:hover {
     animation-play-state: paused;
-}
-
-
-@keyframes slide {
-    0% {
-        left: 100%;
-    }
-
-    100% {
-        left: -2592px;
-        /* card width is 300px because image width is 300px and gap is 32px. Total 7 cards is 8 * 300 = 2400px and 6 * 32 = 192px.Remember if you want to add more cards, you need to add more 32px and 300px */
-    }
-}
-
-
-.title {
-    line-height: 1.2;
-    color: #98e2ff;
-}
-
-.container {
-    background-color: #001219;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
+} 
 
 .projectsContainer {
-    overflow: hidden;
-    position: relative;
-    height: 900px;
     border-color: #4b5563;
     width: 100%;
-    padding-top: 15px;
 }
 
-@media screen and (min-width:320px) {
-    .container {
-        padding: 20px 10px 20px 10px;
-        justify-content: center;
+@media screen and (min-width: 1024px) {
+    .projects {
+        gap: 48px;
     }
-}
-
-@media screen and (min-width:768px) {
-    .container {
-        padding: 15px 20px 15px 20px;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .container {
-        padding: 20px 100px 50px 100px;
-    }
-
-    .projectsContainer {
-        height: 600px;
-    }
-
-    @keyframes slide {
-        0% {
-            left: 100%;
-        }
-    
-        100% {
-            left: -6336px;
-            /* card width is 768px because image width is 500px and gap is 32px. Total 7 cards is 8 * 768 = 6144px and 6 * 32 = 192px.Remember if you want to add more cards, you need to add more 32px and 500px */
-        }
-    }
-    
 }

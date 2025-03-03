@@ -1,189 +1,161 @@
 .aboutMeContainer {
-    background-color: #001219;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    column-gap: 2rem;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: auto;
+}
+
+.imageOverlay {
+  z-index: 10;
+  border-radius: 16px;
+  background-color: #2f3d00;
+  height: 335px;
+  width: 254px;
+  position: relative;
 }
 
 .selfImage {
-    height: 100%;
-    border-radius: 5%;
+  height: 335px;
+  width: 254px;
+  border-radius: 16px;
+  left: 8px;
+  bottom: 8px;
+  position: absolute;
 }
 
 .title {
-    font-weight: bold;
-    font-weight: 700;
-    font-size: 3rem;
-    color: #98e2ff;
-    text-align: center;
+  font-family: Fira Code;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41.98px;
 }
 
 .information {
-    margin: 1rem 0%;
-    text-align: justify;
-    color: white;
-    font-weight: 500;
-    font-family: revert;
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26.24px;
+  margin: 1rem 0%;
+  text-align: justify;
+  color: #e3e5dc;
+  width: auto;
 }
 
 .contactMeButton {
-    font-size: 1rem;
-    padding: 10px;
-    background-color: transparent;
-    border-color: #98e2ff;
-    border-radius: 10px;
-    font-family: revert;
-    color: white;
-    font-weight: 700;
-    box-sizing: border-box;
+  padding: 10px;
+  background: #cbfc2a;
+  border-radius: 10px;
+  font-family: revert;
+  color: #161a0b;
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.99px;
+  box-sizing: border-box;
+  border: none;
 }
 
 .contactMeButton:hover {
-    box-shadow: 2px 2px 5px 0px #98e2ff;
-}
-
-@media only screen and (min-width: 320px) {
-    .aboutMeContainer {
-        padding: 20px 10px;
-        flex-direction: column;
-    }
-
-    .selfImage {
-        width: 100%;
-    }
-
-    .imageContainer {
-        text-align: center;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .information {
-        font-size: 1.2rem;
-    }
-
-    .contactMeButton {
-        position: relative;
-        left: 33%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .aboutMeContainer {
-        padding: 20px 50px;
-        flex-direction: column;
-    }
-
-    .selfImage {
-        width: 65%;
-    }
-
-    .imageContainer {
-        text-align: center;
-    }
-
-    .title {
-        font-size: 3rem;
-    }
-
-    .information {
-        font-size: 1.2rem;
-    }
-
-    .contactMeButton {
-        position: relative;
-        left: 42%;
-    }
+  box-shadow: 2px 2px 5px 0px #98e2ff;
 }
 
 @media only screen and (min-width: 1024px) {
-    .aboutMeContainer {
-        padding: 20px 100px 50px 100px;
-        flex-direction: row;
-    }
+  .aboutMeContainer{
+    flex-direction: row;
+    gap:81px;
+  }
 
-    .imageContainer {
-        margin-right: 2rem;
-        text-align: end;
-    }
+  .imageOverlay{
+    height: 435px;
+    width: 320px;
+  }
 
-    .selfImage {
-        width: 320px;
-    }
+  .selfImage {
+    height: 435px;
+    width: 320px;
+    left: 33px;
+    bottom: 33px;
+  }
 
-    .selfInformationContainer {
-        max-width: 1000px;
-    }
+  .title {
+    font-size: 32px;
+    line-height: 41.98px;
+  }
 
-    .information {
-        font-size: 1rem;
-    }
+  .information {
+    font-size: 20px;
+    line-height: 26.24px;
+  }
+
+  .selfInformationContainer {
+    max-width: 1000px;
+  }
 }
 
 .bounceInFromRightAnimation {
-    animation: bounceInFromRight 1s ease 0s 1 normal forwards;
+  animation: bounceInFromRight 1s ease 0s 1 normal forwards;
 }
 
-
-
 @keyframes bounceInFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 
-    60% {
-        opacity: 1;
-        transform: translateX(-30px);
-    }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
 
-    80% {
-        transform: translateX(10px);
-    }
+  80% {
+    transform: translateX(10px);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .bounceInFromLeftAnimation {
-    animation: bounceInFromLeft 1s ease-in-out forwards;
+  animation: bounceInFromLeft 1s ease-in-out forwards;
 }
 
 @keyframes bounceInFromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 
-    60% {
-        opacity: 1;
-        transform: translateX(30px);
-    }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
 
-    80% {
-        transform: translateX(-10px);
-    }
+  80% {
+    transform: translateX(-10px);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .pulse {
-    animation: pulse 1s infinite ease-in-out alternate;
+  animation: pulse 1s infinite ease-in-out alternate;
 }
 
 @keyframes pulse {
-    from {
-        transform: scale(0.8);
-    }
+  from {
+    transform: scale(0.8);
+  }
 
-    to {
-        transform: scale(1.2);
-    }
+  to {
+    transform: scale(1.2);
+  }
 }

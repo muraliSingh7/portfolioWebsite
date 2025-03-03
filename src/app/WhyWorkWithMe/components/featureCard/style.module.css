@@ -1,0 +1,47 @@
+.featureCard {
+  background: linear-gradient(180deg, #000000 0%, #2f3a0b 100%) padding-box,
+    linear-gradient(180deg, #638000 0%, #000000 100%) border-box;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 12px;
+  width: 167px;
+}
+
+.featureContent {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.featureTitle {
+  font-family: Fira Code;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fafafa;
+}
+
+.featureDescription {
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #e3e5dc;
+}
+
+@media screen and (min-width: 1024px) {
+  .featureCard {
+    width: 267px;
+    padding: 24px;
+  }
+
+  .featureTitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .featureDescription {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

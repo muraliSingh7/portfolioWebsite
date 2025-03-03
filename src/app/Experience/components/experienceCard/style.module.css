@@ -1,171 +1,201 @@
 .experienceCardContainer {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 80.2%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80.2%;
+  font-family: Fira Code;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.companyName {
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e3e5dc;
+}
+
+.jobTitle {
+  font-family: Fira Code;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fafafa;
+}
+
+.dates {
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20.99px;
+  margin-bottom: 0%;
 }
 
 /*circles on timeline*/
 .experienceCardContainer::after {
-    position: absolute;
-    content: '\f0b1';
-    width: 50px;
-    height: 55px;
-    right: -32px;
-    background-color: #001219;
-    border: 4px solid #98e2ff;
-    top: 10px;
-    border-radius: 50%;
-    z-index: 100;
-    font-size: 1.89rem;
-    text-align: center;
-    color: #98e2ff;
-    font-weight: 600;
-    /* padding: 5px; */
-    font-family: "Font Awesome 6 Free";
+  position: absolute;
+  content: "\f0b1";
+  width: 50px;
+  height: 55px;
+  right: -32px;
+  background: linear-gradient(180deg, #000000 0%, #2f3a0b 100%) padding-box,
+    linear-gradient(180deg, #638000 0%, #000000 100%) border-box;
+  border: 2px solid transparent;
+  top: 10px;
+  border-radius: 50%;
+  z-index: 100;
+  font-size: 1.89rem;
+  text-align: center;
+  color: #cbfc2a;
+  font-weight: 600;
+  /* padding: 5px; */
+  font-family: "Font Awesome 6 Free";
+  line-height: 50px;
 }
 
 .left {
-    left: -32%;
+  left: -31%;
 }
 
 .right {
-    right: -51.5%;
+  right: -51.5%;
 }
 
 /* arrows pointing right */
 .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 27px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #98e2ff;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #98e2ff;
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 27px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #638000;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #638000;
 }
 
 /* arrows pointing left  */
 .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 27px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #98e2ff;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #98e2ff transparent transparent;
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 27px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #2f3a0b;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #638000 transparent transparent;
 }
 
 .right::after {
-    left: -32px;
+  left: -35px;
 }
 
-.experienceCardContainer .content {
-    /* background-color: #98e2ff; */
-    background-color: transparent;
-    position: relative;
-    border-radius: 6px;
-    padding: 1rem;
-    color: #ffffff;
-    border: medium solid #98e2ff;
+.content {
+  position: relative;
+  border-radius: 6px;
+  padding: 1rem;
+  border: thin solid transparent;
+  background: linear-gradient(180deg, #000000 0%, #2f3a0b 100%) padding-box,
+    linear-gradient(180deg, #638000 0%, #000000 100%) border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 @media screen and (max-width: 767px) {
-    /* .experience .timeline::after {
+  /* .experience .timeline::after {
         left: 31px;
     } */
 
-    .experienceCardContainer {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
+  .experienceCardContainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
 
-    .experienceCardContainer::before {
-        left: 60px;
-        border: medium solid #98e2ff;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent #98e2ff transparent transparent;
-    }
+  .experienceCardContainer::before {
+    left: 60px;
+    border: medium solid #638000;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #638000 transparent transparent;
+  }
 
-    .left {
-        left: 0%;
-    }
+  .left {
+    left: 0%;
+  }
 
-    .left::after {
-        left: 5px;
-    }
+  .left::after {
+    left: 5px;
+  }
 
-    .right::after {
-        left: 5px;
-    }
+  .right::after {
+    left: 5px;
+  }
 
-    .right {
-        left: 0%;
-    }
+  .right {
+    left: 0%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .experienceCardContainer {
-        width: 95%;
-    }
+  .experienceCardContainer {
+    width: 100%;
+  }
 
-    .left {
-        left: -46.5%;
-    }
+  .left {
+    left: -51%;
+  }
 }
 
-
 .swingInRightForward {
-    animation: swingInRightForward 0.5s linear both;
+  animation: swingInRightForward 0.5s linear both;
 }
 
 @keyframes swingInRightForward {
-    0% {
-        -webkit-transform: rotateY(-100deg);
-        transform: rotateY(-100deg);
-        -webkit-transform-origin: right;
-        transform-origin: right;
-        opacity: 0;
-        z-index: 100;
-    }
+  0% {
+    -webkit-transform: rotateY(-100deg);
+    transform: rotateY(-100deg);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 0;
+    z-index: 100;
+  }
 
-    100% {
-        -webkit-transform: rotateY(0);
-        transform: rotateY(0);
-        -webkit-transform-origin: right;
-        transform-origin: right;
-        opacity: 1;
-        z-index: 100;
-    }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 1;
+    z-index: 100;
+  }
 }
 
-
 .swingInLeftForward {
-    animation: swingInLeftForward 0.5s linear both;
+  animation: swingInLeftForward 0.5s linear both;
 }
 
 @keyframes swingInLeftForward {
-    0% {
-        -webkit-transform: rotateY(100deg);
-        transform: rotateY(100deg);
-        -webkit-transform-origin: left;
-        transform-origin: left;
-        opacity: 0;
-        z-index: 100;
-    }
+  0% {
+    -webkit-transform: rotateY(100deg);
+    transform: rotateY(100deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+    z-index: 100;
+  }
 
-    100% {
-        -webkit-transform: rotateY(0);
-        transform: rotateY(0);
-        -webkit-transform-origin: left;
-        transform-origin: left;
-        opacity: 1;
-        z-index: 100;
-    }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 1;
+    z-index: 100;
+  }
 }

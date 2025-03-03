@@ -1,0 +1,10 @@
+.chip {
+  padding: 4px 20px;
+  border-radius: 12px;
+  background-color: #2f3d00;
+  color: #fafafa;
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
