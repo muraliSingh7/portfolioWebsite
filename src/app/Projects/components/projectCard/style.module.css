@@ -54,6 +54,7 @@
 .projectImg {
   flex: 1;
   height: 384px;
+  max-width: 100%;
   border-radius: 16px;
   align-self: center;
 }
@@ -71,6 +72,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .projectImg {
+    max-width: auto;
+  }
+  
   .projectCardContainer:nth-child(n + 3) {
     display: flex;
   }
@@ -79,6 +84,7 @@
     padding: 48px;
     gap: 48px;
     border-radius: 12px;
+    max-width: 1200px;
   }
 
   .projectCardContainer:nth-child(odd) {

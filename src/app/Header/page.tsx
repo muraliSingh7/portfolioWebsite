@@ -22,7 +22,7 @@ export default function CustomNavbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 1024) {
         document
           .getElementsByClassName(styles.navbarNav)[0]
           .classList.remove(styles.open);

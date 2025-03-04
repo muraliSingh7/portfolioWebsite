@@ -1,9 +1,8 @@
 .logo {
   color: #ffffff;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 60px;
-  letter-spacing: 0%;
+  font-size: 32px;
+  line-height: 40px;
   font-family: "Cute Font", serif;
 }
 
@@ -23,7 +22,7 @@
   list-style-type: none;
   position: absolute;
   left: 0;
-  bottom: -280px;
+  bottom: -315px;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -79,6 +78,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .logo{
+    font-size: 48px;
+    line-height: 60px;
+  }
+
   .navbar {
     position: fixed;
     top: 40px;

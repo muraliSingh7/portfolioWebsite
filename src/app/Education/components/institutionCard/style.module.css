@@ -14,7 +14,7 @@
   font-size: larger;
   font-family: Fira Code;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -23,12 +23,13 @@
   font-weight: 500;
   font-family: Fira Code;
   line-height: 24px;
+  font-size: 16px;
 }
 
 .year_Of_Completion {
   font-family: Fira Code;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   color: #cbfc2a;
   margin-bottom: 0%;
@@ -129,6 +130,18 @@
     grid-row: 1/1;
     display: grid;
     grid-template-rows: auto auto auto;
+  }
+
+  .course_name {
+    font-size: 20px;
+  }
+
+  .institution_name {
+    font-size: 18px;
+  }
+
+  .year_Of_Completion {
+    font-size: 24px;
   }
 }
 
