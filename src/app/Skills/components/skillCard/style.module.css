@@ -16,7 +16,8 @@
 .skillName {
   font-family: Fira Code;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   color: #d1d5db;
   margin-bottom: 0%;
@@ -24,13 +25,13 @@
 
 @media screen and (min-width: 1024px) {
   .card {
-    width: 120px;
+    width: 154px;
     border-radius: 8px;
   }
 
   .skillName {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 23px;
   }
 }
 

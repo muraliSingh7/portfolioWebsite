@@ -16,8 +16,7 @@ export default function Experience() {
     return (
         <div id="experience" className="sectionContainer">
             <h1 className="sectionTitle">
-                <FontAwesomeIcon icon={faBriefcase} />
-                <span> Experience</span>
+                <span>&nbsp;My Experience &#128188;</span>
             </h1>
             <div className={styles.experienceTimeline}>
                 {experienceCards}

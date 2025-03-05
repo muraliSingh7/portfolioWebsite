@@ -72,6 +72,14 @@ body::-webkit-scrollbar-thumb {
   align-self: stretch;
 }
 
+.sectionTitle.mobile{
+  display: block;
+}
+
+.sectionTitle.largeScreen{
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .mainContainer {
     padding: 244px 120px 72px 120px;
@@ -86,4 +94,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 32px;
     line-height: 41.98px;
   }
+
+  .sectionTitle.mobile{
+    display: none;
+  }
+
+  .sectionTitle.largeScreen{
+    display: block;
+  }
 }
+

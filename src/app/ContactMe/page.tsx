@@ -93,7 +93,7 @@ export default function ContactMe() {
           method="POST"
           className={styles.contactFormContainer}
         >
-          <h1 className="sectionTitle">Let’s Build Something Awesome! 🚀 </h1>
+          <h1 className={`sectionTitle ${styles.contactMeTitle}`} >Let’s Build Something Awesome! &#128640;</h1>
           <div className={styles.formField}>
             <label htmlFor="name" className={styles.label}>
               Name
@@ -149,7 +149,7 @@ export default function ContactMe() {
             <label htmlFor="message" className={styles.label}>
               Message
             </label>
-            <div className={styles.formInputField}>
+            <div className={`${styles.formInputField} ${styles.formInputMessage}`}>
               <FontAwesomeIcon
                 icon={faMessage}
                 className={styles.formInputFieldIcon}

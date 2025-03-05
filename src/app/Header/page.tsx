@@ -16,6 +16,9 @@ export default function CustomNavbar() {
   const handleToggle = (e: MouseEvent<HTMLDivElement>) => {
     e.currentTarget.classList.toggle(hamburgerStyles.open);
     document
+      .getElementsByClassName(styles.navbar)[0]
+      .classList.toggle(styles.open);
+    document
       .getElementsByClassName(styles.navbarNav)[0]
       .classList.toggle(styles.open);
   };
@@ -23,6 +26,9 @@ export default function CustomNavbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1024) {
+        document
+          .getElementsByClassName(styles.navbar)[0]
+          .classList.remove(styles.open);
         document
           .getElementsByClassName(styles.navbarNav)[0]
           .classList.remove(styles.open);
@@ -33,6 +39,7 @@ export default function CustomNavbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <nav className={styles.navbar}>
       <p className={styles.logo}>{"<MS/>"}</p>
@@ -50,28 +57,21 @@ export default function CustomNavbar() {
         </li>
         <li
           className={styles.navItem}
-          onClick={() => handleOnClick("education")}
-        >
-          Education
-        </li>
-        <li className={styles.navItem} onClick={() => handleOnClick("skills")}>
-          Skills
-        </li>
-        <li
-          className={styles.navItem}
-          onClick={() => handleOnClick("projects")}
-        >
-          Projects
-        </li>
-        <li
-          className={styles.navItem}
           onClick={() => handleOnClick("experience")}
         >
           Experience
         </li>
-        <Link href="https://muralisingh.hashnode.dev/" target="_blank">
-          <li className={styles.navItem}>Blogs</li>
-        </Link>
+        <li
+          className={styles.navItem}
+          onClick={() => handleOnClick("testimonials")}
+        >
+          Testimonials
+        </li>
+        <li className={styles.navItem}>
+          <Link href="https://muralisingh.hashnode.dev/" target="_blank">
+            Blogs
+          </Link>
+        </li>
         <li
           className={styles.navItem}
           onClick={() => handleOnClick("contactMe")}

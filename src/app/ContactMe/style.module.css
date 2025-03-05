@@ -5,17 +5,12 @@
   align-items: center;
   color: white;
 }
+.contactMeTitle{
+
+}
 
 .contactImage {
   display: none;
-}
-
-.title {
-  font-family: Fira Code;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 41.98px;
-  color: white;
 }
 
 .contactFormContainer {
@@ -84,6 +79,11 @@
   outline: none;
 }
 
+.formInputMessage {
+  height: 85px;
+  align-items: flex-start;
+}
+
 .submitButton {
   background-color: #cbfc2a;
   color: #000000;
@@ -110,6 +110,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .contactMeTitle {
+    text-align: left;
+  }
+
   .contactImageAndFormContainer {
     display: flex;
     flex-direction: row;
@@ -136,6 +140,11 @@
 
   .formInput::placeholder {
     font-size: 1.2rem;
+  }
+
+  .formInputMessage {
+    height: 128px;
+    align-items: flex-start;
   }
 
   .submitButton {

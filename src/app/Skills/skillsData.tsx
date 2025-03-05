@@ -1,23 +1,64 @@
 import SkillInfo from "./skillInfo";
-import github from '../../../public/github.jpg';
-import express from '../../../public/express.png';
-import nextjs from '../../../public/nextjs.png';
+import github from "../../../public/skills/github.svg";
+import express from "../../../public/skills/express.svg";
+import nextjs from "../../../public/skills/nextjs.svg";
+import nodejs from "../../../public/skills/nodejs.svg";
+import mongodb from "../../../public/skills/mongodb.svg";
+import html from "../../../public/skills/html.svg";
+import css from "../../../public/skills/css.svg";
+import javascript from "../../../public/skills/javascript.svg";
+import typescript from "../../../public/skills/typescript.svg";
+import flutter from "../../../public/skills/flutter.svg";
+import firebase from "../../../public/skills/firebase.svg";
+import tailwind from "../../../public/skills/tailwind.svg";
+import bootstrap from "../../../public/skills/bootstrap.svg";
+import react from "../../../public/skills/react.svg";
 
 const skillCards: SkillInfo[] = [
-    { skillIconImage: "https://img.icons8.com/color/48/000000/html-5--v1.png", skillName: "HTML5" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/css3.png", skillName: "CSS" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/javascript--v1.png", skillName: "Javascript" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/typescript--v1.png", skillName: "Typescript" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/nodejs.png", skillName: "NodeJS" },
-    { skillIconImage: express, skillName: "ExpressJS" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/mongodb.png", skillName: "MongoDB" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/flutter.png", skillName: "Flutter" },
-    { skillIconImage: "https://img.icons8.com/color/48/000000/firebase.png", skillName: "Firebase" },
-    { skillIconImage: github, skillName: "GitHub" },
-    { skillIconImage: "https://img.icons8.com/?size=48&id=EzPCiQUqWWEa&format=png", skillName: "Bootstrap" },
-    { skillIconImage: "https://img.icons8.com/?size=48&id=asWSSTBrDlTW&format=png", skillName: "React" },
-    { skillIconImage: nextjs, skillName: "NextJS" },
-    { skillIconImage: "https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png", skillName: "Tailwind CSS" },
+  {
+    skillIconImage: html,
+    skillName: "HTML5",
+  },
+  {
+    skillIconImage: css,
+    skillName: "CSS",
+  },
+  {
+    skillIconImage: javascript,
+    skillName: "Javascript",
+  },
+  {
+    skillIconImage: typescript,
+    skillName: "Typescript",
+  },
+  {
+    skillIconImage: nodejs,
+    skillName: "NodeJS",
+  },
+  { skillIconImage: express, skillName: "ExpressJS" },
+  { skillIconImage: mongodb, skillName: "MongoDB" },
+  {
+    skillIconImage: flutter,
+    skillName: "Flutter",
+  },
+  {
+    skillIconImage: firebase,
+    skillName: "Firebase",
+  },
+  { skillIconImage: github, skillName: "GitHub" },
+  {
+    skillIconImage: bootstrap,
+    skillName: "Bootstrap",
+  },
+  {
+    skillIconImage: react,
+    skillName: "React",
+  },
+  { skillIconImage: nextjs, skillName: "NextJS" },
+  {
+    skillIconImage: tailwind,
+    skillName: "Tailwind CSS",
+  },
 ];
 
 export default skillCards;

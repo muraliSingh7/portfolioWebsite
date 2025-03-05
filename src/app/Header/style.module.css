@@ -18,25 +18,29 @@
   justify-content: space-between;
 }
 
+.navbar.open{
+  background-color: #000000;
+}
+
 .navbarNav {
   list-style-type: none;
   position: absolute;
   left: 0;
-  bottom: -315px;
+  bottom: -247px;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px;
+  padding: 16px;
   gap: 10px;
 }
 
 .navbarNav.open {
   display: flex;
   z-index: 20;
-  background-color: #00000099;
-  box-shadow: 0px 4px 24px 0px #ffffff1a;
+  background-color: #000000;
+  box-shadow: 0px 25px 25px 0px #00000026;
 }
 
 .navItem {
@@ -89,6 +93,7 @@
     left: 120px;
     right: 120px;
     border-radius: 30px;
+    background-color: #00000099;
     box-shadow: 0px 4px 24px 0px #ffffff1a;
     padding: 16px 48px;
   }

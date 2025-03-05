@@ -36,15 +36,18 @@
   line-height: 41.98px;
 }
 
+.selfInformationContainer {
+  list-style-position: inside;
+}
+
 .information {
   font-family: Fira Code;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26.24px;
+  font-size: 16px;
+  line-height: 21px;
   margin: 1rem 0%;
-  text-align: justify;
+  text-align: left;
   color: #e3e5dc;
-  width: auto;
 }
 
 .contactMeButton {
@@ -66,12 +69,12 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .aboutMeContainer{
+  .aboutMeContainer {
     flex-direction: row;
-    gap:81px;
+    gap: 81px;
   }
 
-  .imageOverlay{
+  .imageOverlay {
     height: 435px;
     width: 320px;
   }

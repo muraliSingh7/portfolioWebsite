@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  padding: 20px;
 }
 
 .contactInfo {
@@ -11,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .socialIconsContainer {
@@ -23,13 +24,14 @@
 .emailIcon,
 .telephoneIcon {
   color: #cbfc2a;
-  font-size: 1.5rem;
+  width: 23px;
+  height: 23px;
 }
 
 .topmateLogo {
   vertical-align: sub;
-  height: 1.5rem;
-  width: 1.5rem;
+  width: 23px;
+  height: 23px;
 }
 
 .contactDetails {
@@ -40,7 +42,7 @@
 
 .telephone,
 .email {
-  color: #cbfc2a;
+  color: #FAFAFA;
   font-family: Inter;
   font-weight: 500;
   font-size: 16px;
@@ -60,30 +62,10 @@
   color: #cbfc2a;
 }
 
-@media screen and (min-width: 320px) {
-  .footer {
-    padding: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 30px;
-    gap: 20px;
-  }
-
-  .contactInfo,
-  .contactDetails,
-  .telephone,
-  .email {
-    gap: 20px;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .footer {
     padding: 50px;
-    gap: 30px;
+    gap: 28px;
   }
 
   .contactInfo {
@@ -92,17 +74,6 @@
     flex-direction: row;
     align-items: center;
     gap: 200px;
-  }
-
-  .socialIcons,
-  .emailIcon,
-  .telephoneIcon {
-    font-size: 2rem;
-  }
-
-  .topmateLogo{
-    height: 2rem;
-    width: 2rem;
   }
 
   .contactDetails {

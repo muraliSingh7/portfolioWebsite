@@ -64,18 +64,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
-  gap: 28px;
+  gap: 12px;
 }
 
 .projectCardIcon {
   color: #cbfc2a;
+  width: 24px;
+  height: 23px;
 }
 
 @media screen and (min-width: 1024px) {
   .projectImg {
     max-width: auto;
   }
-  
+
   .projectCardContainer:nth-child(n + 3) {
     display: flex;
   }
@@ -107,5 +109,10 @@
     padding-top: 0px;
     border-right: 1px solid #ffffff1a;
     padding-right: 48px;
+  }
+
+  .projectCardIcon {
+    width: 29px;
+    height: 28px;
   }
 }

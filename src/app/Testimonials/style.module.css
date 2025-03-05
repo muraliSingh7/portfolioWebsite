@@ -5,7 +5,7 @@
   align-items: stretch;
   align-content: center;
   justify-content: center;
-  gap: 48px;
+  gap: 32px;
 }
 
 .clientHeartIcon {
@@ -14,6 +14,6 @@
 
 @media screen and (min-width:1024px) {
   .testimonialsContainer {
-    gap: 32px;
+    gap: 48px;
   }
 }

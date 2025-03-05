@@ -1,0 +1,13 @@
+.educationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .educationContainer{
+        gap: 48px;
+    }
+}
