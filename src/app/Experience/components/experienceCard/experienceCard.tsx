@@ -1,8 +1,15 @@
 "use client";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import styles from "./style.module.css";
-import { FunctionComponent, useEffect, useRef, useState } from "react";
+import {
+  FunctionComponent,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import ExperienceInfo from "../../experienceInfo";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 interface ExperienceCardProps extends ExperienceInfo {
   alignment: "left" | "right";
@@ -32,45 +39,34 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
     };
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (alignment === "left") {
-            entry.target.classList.add(
-              viewportWidth < 768
-                ? styles.swingInLeftForward
-                : styles.swingInRightForward
-            );
-          } else {
-            entry.target.classList.add(styles.swingInLeftForward);
-          }
+  const onIntersection = useCallback(
+    (isIntersecting: boolean, target: Element) => {
+      if (isIntersecting) {
+        if (alignment === "left") {
+          target.classList.add(
+            viewportWidth < 768
+              ? styles.swingInLeftForward
+              : styles.swingInRightForward
+          );
         } else {
-          if (alignment === "left") {
-            entry.target.classList.remove(
-              viewportWidth < 768
-                ? styles.swingInLeftForward
-                : styles.swingInRightForward
-            );
-          } else {
-            entry.target.classList.remove(styles.swingInLeftForward);
-          }
+          target.classList.add(styles.swingInLeftForward);
         }
-      });
-    });
-
-    const currentCardRef = cardRef.current;
-
-    if (currentCardRef) {
-      observer.observe(currentCardRef);
-    }
-
-    return () => {
-      if (currentCardRef) {
-        observer.unobserve(currentCardRef);
+      } else {
+        if (alignment === "left") {
+          target.classList.remove(
+            viewportWidth < 768
+              ? styles.swingInLeftForward
+              : styles.swingInRightForward
+          );
+        } else {
+          target.classList.remove(styles.swingInLeftForward);
+        }
       }
-    };
-  }, [cardRef, alignment, viewportWidth]);
+    },
+    [viewportWidth, alignment]
+  );
+
+  useIntersectionObserver(cardRef, onIntersection);
 
   return (
     <div

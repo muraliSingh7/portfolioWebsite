@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 export default function Hero() {
   return (
     <div className="sectionContainer">
-      <p className={styles.greeting}>HELLO THERE!</p>
+      <p className={styles.greeting}>HELLO THERE &#128075;</p>
       <h1 className={styles.heroTitle}>
         I am Murali Singh,
         <br />a Software Engineer from India

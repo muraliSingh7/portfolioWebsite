@@ -108,3 +108,18 @@
     line-height: 30px;
   }
 }
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.clientCardAnimation {
+  animation: zoomIn 1s ease 0s 1 normal forwards;
+}

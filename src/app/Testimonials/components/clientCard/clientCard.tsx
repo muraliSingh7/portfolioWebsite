@@ -1,16 +1,31 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import { ClientInfo } from "../../clientInfo";
 import styles from "./style.module.css";
 import Image from "next/image";
 import location from "../../../../../public/testimonials/location.svg";
 import quotes from "../../../../../public/testimonials/quotes.png";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+
 interface ClientCardProps {
   clientInfo: ClientInfo;
 }
 const clientCard: React.FC<ClientCardProps> = ({ clientInfo }) => {
   const ratingArray = new Array(5).fill(0);
+  const clientCardRef = useRef<HTMLDivElement>(null);
+
+  const onIntersection = (isIntersecting: boolean, target: Element) => {
+    if (isIntersecting) {
+      target.classList.add(styles.clientCardAnimation);
+    } else {
+      target.classList.remove(styles.clientCardAnimation);
+    }
+  };
+
+  useIntersectionObserver(clientCardRef, onIntersection);
+
   return (
-    <div className={styles.clientCard}>
+    <div ref={clientCardRef} className={styles.clientCard}>
       <div
         style={{
           backgroundImage: `url(${quotes.src})`,

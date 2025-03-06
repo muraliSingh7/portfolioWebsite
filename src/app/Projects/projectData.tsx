@@ -1,6 +1,9 @@
 import { ProjectInfo } from "./projectInfo";
-import ezlogo from "../../../public/ezLogo.png";
-import earthlyEcoThumbnail from "../../../public/earthlyEcoThumbnail.webp";
+import ezlogo from "../../../public/projects/ezLogo.png";
+import earthlyEcoThumbnail from "../../../public/projects/earthlyEcoThumbnail.webp";
+import yelpcamp from "../../../public/projects/yelpcamp.png";
+import flight from "../../../public/projects/flight.png";
+
 export const projectData: ProjectInfo[] = [
   {
     projectName: "Earthly Eco",
@@ -65,7 +68,7 @@ export const projectData: ProjectInfo[] = [
     ],
     codeLink: "https://github.com/muraliSingh7/campingWebsite",
     videoLink: "https://www.youtube.com/watch?v=gGzljDgcpz0",
-    srcImage: "https://img.youtube.com/vi/gGzljDgcpz0/mqdefault.jpg",
+    srcImage: yelpcamp,
     deployedLink: "https://yelpcamp-9gsq.onrender.com/landing",
   },
   {
@@ -86,7 +89,7 @@ export const projectData: ProjectInfo[] = [
     ],
     codeLink: "https://github.com/muraliSingh7/toursandtravels",
     videoLink: "https://www.youtube.com/watch?v=Uk5gadtpViQ",
-    srcImage: "https://img.youtube.com/vi/Uk5gadtpViQ/mqdefault.jpg",
+    srcImage: flight,
     deployedLink: "https://toursandtravels-7sng.onrender.com/flights",
   },
   // {
@@ -125,7 +128,6 @@ export const projectData: ProjectInfo[] = [
   //   srcImage: ezlogo,
   //   deployedLink: "https://ez-car-landing-page-alpha.vercel.app/",
   // },
-
   // {
   //   projectName: "Spence",
   //   projectDescription: [

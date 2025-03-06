@@ -1,4 +1,4 @@
-import React, { useRef, FunctionComponent, useEffect } from "react";
+import React, { useRef, FunctionComponent } from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,12 +7,15 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { ProjectInfo } from "../../projectInfo";
 import Link from "next/link";
 import Chip from "../chip/chip";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 interface ProjectCardProps {
+  index: number;
   projectInfo: ProjectInfo;
 }
 
 const ProjectCard: FunctionComponent<ProjectCardProps> = ({
+  index,
   projectInfo: {
     projectName,
     technologiesUsed,
@@ -23,15 +26,42 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
     deployedLink,
   },
 }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const onIntersection = (
+    isIntersecting: boolean,
+    target: Element,
+    index?: number
+  ) => {
+    if (isIntersecting) {
+      if (index !== undefined && index % 2 === 0) {
+        target.classList.add(styles.projectCardEnteranceAnimationEvenChild);
+      } else {
+        target.classList.add(styles.projectCardEnteranceAnimationOddChild);
+      }
+    } else {
+      if (index !== undefined && index % 2 === 0) {
+        target.classList.remove(
+          styles.projectCardEnteranceAnimationEvenChild
+        );
+      } else {
+        target.classList.remove(
+          styles.projectCardEnteranceAnimationOddChild
+        );
+      }
+    }
+  };
+
+  useIntersectionObserver(cardRef, onIntersection, index);
+
   return (
-    <div className={styles.projectCardContainer}>
+    <div ref={cardRef} className={styles.projectCardContainer}>
       <Image
         className={styles.projectImg}
         src={srcImage}
         width={300}
         height={0}
         alt={projectName}
-        loading="lazy"
       />
       <div className={styles.projectDetailsContainer}>
         <h3 className={styles.projectName}>{projectName}</h3>

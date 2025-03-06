@@ -57,6 +57,7 @@
   max-width: 100%;
   border-radius: 16px;
   align-self: center;
+  object-fit: cover;
 }
 
 .projectButtonsContainer {
@@ -75,7 +76,6 @@
 
 @media screen and (min-width: 1024px) {
   .projectImg {
-    max-width: auto;
   }
 
   .projectCardContainer:nth-child(n + 3) {
@@ -115,4 +115,33 @@
     width: 29px;
     height: 28px;
   }
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.projectCardEnteranceAnimationEvenChild {
+  animation: slideInFromLeft 2s ease 0s 1 normal forwards;
+}
+
+.projectCardEnteranceAnimationOddChild {
+  animation: slideInFromRight 2s ease 0s 1 normal forwards;
 }

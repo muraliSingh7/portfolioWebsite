@@ -5,13 +5,13 @@ import profilePic from "../../../public/murali.jpeg";
 import { useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 export default function AboutMe() {
-  const imgRef = useRef<HTMLImageElement>(null);
   const titleRef = useRef<HTMLParagraphElement>(null);
   const infoRef = useRef<HTMLParagraphElement>(null);
   const contactRef = useRef<HTMLButtonElement>(null);
+  const imgOverlayRef = useRef<HTMLDivElement>(null);
   const refs = useMemo(
-    () => [imgRef, titleRef, infoRef, contactRef],
-    [imgRef, titleRef, infoRef, contactRef]
+    () => [imgOverlayRef, titleRef, infoRef, contactRef],
+    [imgOverlayRef, titleRef, infoRef, contactRef]
   );
 
   useEffect(() => {
@@ -52,14 +52,14 @@ export default function AboutMe() {
 
   function getAnimationClass(element: HTMLElement) {
     // Define your logic to determine the appropriate animation class based on the element
-    if (element === imgRef.current) {
-      return styles.bounceInFromLeftAnimation;
-    } else if (element === titleRef.current) {
+    if (element === titleRef.current) {
       return styles.bounceInFromRightAnimation;
     } else if (element === infoRef.current) {
       return styles.bounceInFromRightAnimation;
     } else if (element === contactRef.current) {
       return styles.pulse;
+    } else if (element === imgOverlayRef.current) {
+      return styles.bounceInFromLeftAnimation;
     }
     return "";
   }
@@ -67,9 +67,8 @@ export default function AboutMe() {
   return (
     <div id="aboutMe" className={styles.aboutMeContainer}>
       <div className={styles.imageContainer}>
-        <div className={styles.imageOverlay}>
+        <div ref={imgOverlayRef} className={styles.imageOverlay}>
           <Image
-            ref={imgRef}
             src={profilePic}
             alt="Picture of the author"
             className={styles.selfImage}

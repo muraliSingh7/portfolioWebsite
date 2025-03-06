@@ -2,6 +2,7 @@
 import React, { FunctionComponent, useEffect, useRef } from "react";
 import styles from './style.module.css';
 import Image, { StaticImageData } from 'next/image';
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 type SkillsProps = { skillName: string; skillIconImage: string | StaticImageData };
 
@@ -9,29 +10,15 @@ const SkillCard: FunctionComponent<SkillsProps> = ({ skillName, skillIconImage }
     const isUrl = typeof skillIconImage === "string";
     const skillCardRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add(styles.skillCardAnimation);
-                } else {
-                    entry.target.classList.remove(styles.skillCardAnimation);
-                }
-            })
-        });
-
-        const skillCardElement = skillCardRef.current;
-        if (skillCardElement) {
-            observer.observe(skillCardElement);
-        }
-
-        return () => {
-            if (skillCardElement) {
-                observer.unobserve(skillCardElement);
-            }
-        }
-
-    }, [skillCardRef]);
+    const onIntersection = (isIntersecting: boolean, target: Element) => {
+      if (isIntersecting) {
+        target.classList.add(styles.skillCardAnimation);
+      } else {
+        target.classList.remove(styles.skillCardAnimation);
+      }
+    };
+  
+    useIntersectionObserver(skillCardRef, onIntersection);
 
     if (isUrl) {
         return (
