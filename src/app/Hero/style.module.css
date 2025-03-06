@@ -1,0 +1,44 @@
+.greeting {
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.37px;
+  text-align: center;
+  color: #cbfc2a;
+}
+
+.heroTitle {
+  font-family: Fira Code;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41.98px;
+  text-align: center;
+  color: #fafafa;
+}
+
+.heroDescription {
+  font-family: Fira Code;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.99px;
+  text-align: center;
+  color: #e3e5dc;
+}
+
+@media screen and (min-width: 1024px) {
+  .greeting {
+    font-size: 22px;
+    line-height: 28.86px;
+  }
+  
+  .heroTitle {
+    font-size: 56px;
+    line-height: 73.47px;
+  }
+  
+  .heroDescription {
+    font-size: 24px;
+    line-height: 31.49px;
+  }
+  
+}

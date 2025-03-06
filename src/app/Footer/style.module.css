@@ -1,98 +1,83 @@
 .footer {
-    background-color: #001219;
-    color: white;
-    font-family: revert;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
 }
 
-.contactInfo span {
-    margin-right: 10px;
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
-.contactInfo a {
-    font-size: 1.8rem;
-    color: #000000;
+.socialIconsContainer {
+  display: flex;
+  gap: 20px;
 }
 
-.img {
-    vertical-align: sub;
+.socialIcons,
+.emailIcon,
+.telephoneIcon {
+  color: #cbfc2a;
+  width: 23px;
+  height: 23px;
+}
+
+.topmateLogo {
+  vertical-align: sub;
+  width: 23px;
+  height: 23px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.telephone,
+.email {
+  color: #FAFAFA;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .heartIcon {
-    color: #ff0000;
-}
-
-.footer>p:last-child {
-    margin: 10px 0px;
-    text-align: center;
+  color: #ff0000;
 }
 
 .ownerName {
-    font-weight: bold;
-    color: #ea9c8b;
+  font-weight: bold;
+  color: #cbfc2a;
 }
 
-.socialIcons {
-    color: #98e2ff;
-}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 50px;
+    gap: 28px;
+  }
 
-@media screen and (min-width:320px) {
-    .footer {
-        font-weight: 600;
-        padding: 20px 10px 20px 10px;
-    }
+  .contactInfo {
+    line-height: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+  }
 
-    .contactInfo p:first-child {
-        font-size: 1.7rem;
-        color: #98e2ff;
-    }
-
-    .contactInfo p {
-        margin-bottom: 0.75rem;
-        line-height: 1.5;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .footer {
-        padding: 20px 50px 20px 50px;
-        font-weight: 600;
-    }
-
-    .contactInfo p:first-child {
-        font-size: 1.75rem;
-        color: #98e2ff;
-    }
-
-    .contactInfo p {
-        margin-bottom: 0.75rem;
-        line-height: 1.5;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .footer {
-        padding: 20px 100px 20px 100px;
-    }
-
-    .contactInfo {
-        line-height: 10px;
-    }
-
-    .contactInfo p:first-child {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #98e2ff;
-    }
-
-    .contactInfo p {
-        margin-bottom: 0.75rem;
-    }
-
-    .telephoneEmailLink {
-        font-size: 1.05rem !important;
-        line-height: 1.5;
-        color: white !important;
-        text-decoration: none !important;
-    }
+  .contactDetails {
+    flex-direction: row;
+    gap: 40px;
+  }
 }

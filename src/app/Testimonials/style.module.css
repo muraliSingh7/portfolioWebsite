@@ -1,0 +1,19 @@
+.testimonialsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.clientHeartIcon {
+  color: #ff0000;
+}
+
+@media screen and (min-width:1024px) {
+  .testimonialsContainer {
+    gap: 48px;
+  }
+}

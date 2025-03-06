@@ -8,6 +8,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: #000000 !important;
 }
 
 a {
@@ -23,14 +24,83 @@ a {
 
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 body::-webkit-scrollbar {
   width: 5px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #001219;
 }
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainContainer {
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 80px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 32px;
+}
+
+.sectionTitle {
+  color: #ffffff;
+  font-family: Fira Code;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.49px;
+  text-align: center;
+  align-self: stretch;
+}
+
+.sectionTitle.mobile{
+  display: block;
+}
+
+.sectionTitle.largeScreen{
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainContainer {
+    padding: 244px 120px 72px 120px;
+    gap: 144px;
+  }
+
+  .sectionContainer {
+    gap: 48px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+    line-height: 41.98px;
+  }
+
+  .sectionTitle.mobile{
+    display: none;
+  }
+
+  .sectionTitle.largeScreen{
+    display: block;
+  }
+}
+

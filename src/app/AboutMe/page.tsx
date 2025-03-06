@@ -5,13 +5,13 @@ import profilePic from "../../../public/murali.jpeg";
 import { useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 export default function AboutMe() {
-  const imgRef = useRef<HTMLImageElement>(null);
   const titleRef = useRef<HTMLParagraphElement>(null);
   const infoRef = useRef<HTMLParagraphElement>(null);
   const contactRef = useRef<HTMLButtonElement>(null);
+  const imgOverlayRef = useRef<HTMLDivElement>(null);
   const refs = useMemo(
-    () => [imgRef, titleRef, infoRef, contactRef],
-    [imgRef, titleRef, infoRef, contactRef]
+    () => [imgOverlayRef, titleRef, infoRef, contactRef],
+    [imgOverlayRef, titleRef, infoRef, contactRef]
   );
 
   useEffect(() => {
@@ -52,14 +52,14 @@ export default function AboutMe() {
 
   function getAnimationClass(element: HTMLElement) {
     // Define your logic to determine the appropriate animation class based on the element
-    if (element === imgRef.current) {
-      return styles.bounceInFromLeftAnimation;
-    } else if (element === titleRef.current) {
+    if (element === titleRef.current) {
       return styles.bounceInFromRightAnimation;
     } else if (element === infoRef.current) {
       return styles.bounceInFromRightAnimation;
     } else if (element === contactRef.current) {
       return styles.pulse;
+    } else if (element === imgOverlayRef.current) {
+      return styles.bounceInFromLeftAnimation;
     }
     return "";
   }
@@ -67,28 +67,23 @@ export default function AboutMe() {
   return (
     <div id="aboutMe" className={styles.aboutMeContainer}>
       <div className={styles.imageContainer}>
-        <Image
-          ref={imgRef}
-          src={profilePic}
-          alt="Picture of the author"
-          className={styles.selfImage}
-        ></Image>
+        <div ref={imgOverlayRef} className={styles.imageOverlay}>
+          <Image
+            src={profilePic}
+            alt="Picture of the author"
+            className={styles.selfImage}
+          />
+        </div>
       </div>
       <div className={styles.selfInformationContainer}>
         <p ref={titleRef} className={styles.title}>
           So, who am I?
         </p>
         <div ref={infoRef} className={styles.information}>
-          <h4>I am Murali Singh, a Fullstack Developer</h4>
-          <ul>
-            <li>
-              I am a Fullstack Developer from India with experience in building
-              scalable web and mobile applications.
-            </li>
-            <li>
-              I specialize in full-stack development.
-            </li>
-          </ul>
+          <p>
+            Hi, I'm Murali Singh, a Fullstack Developer from India with
+            experience in building scalable web and mobile applications.
+          </p>
 
           <h4>I have worked on high-impact projects, such as:</h4>
           <ul>
@@ -104,7 +99,7 @@ export default function AboutMe() {
             </li>
           </ul>
 
-          <h4>Why I am a Great Fit for your team:</h4>
+          {/* <h4>Why I am a Great Fit for your team:</h4>
           <ul>
             <li>
               <strong>Technical Proficiency</strong>
@@ -121,14 +116,23 @@ export default function AboutMe() {
             <li>
               <strong>Adaptable to Local Time Zones</strong>
             </li>
-          </ul>
+          </ul> */}
         </div>
+
         <Link
           href="https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view"
           target="_blank"
         >
-          <button ref={contactRef} className={styles.contactMeButton}>
-            Get in Touch
+          <button
+            ref={contactRef}
+            className={styles.contactMeButton}
+            // onClick={() =>
+            //   window.open(
+            //     "https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view"
+            //   )
+            // }
+          >
+            Let's talk &rarr;
           </button>
         </Link>
       </div>
