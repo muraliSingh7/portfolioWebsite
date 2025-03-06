@@ -86,7 +86,6 @@ export default function CustomNavbar() {
         >
           <button
             className={styles.resumeButton}
-            onClick={() => window.open("/resume.pdf")}
           >
             Resume
           </button>

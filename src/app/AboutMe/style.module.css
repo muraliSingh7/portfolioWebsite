@@ -54,7 +54,6 @@
   padding: 10px;
   background: #cbfc2a;
   border-radius: 10px;
-  font-family: revert;
   color: #161a0b;
   font-family: Fira Code;
   font-weight: 500;
@@ -62,10 +61,7 @@
   line-height: 20.99px;
   box-sizing: border-box;
   border: none;
-}
-
-.contactMeButton:hover {
-  box-shadow: 2px 2px 5px 0px #98e2ff;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {

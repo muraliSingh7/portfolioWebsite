@@ -118,11 +118,20 @@ export default function AboutMe() {
             </li>
           </ul> */}
         </div>
+
         <Link
           href="https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view"
           target="_blank"
         >
-          <button ref={contactRef} className={styles.contactMeButton}>
+          <button
+            ref={contactRef}
+            className={styles.contactMeButton}
+            // onClick={() =>
+            //   window.open(
+            //     "https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view"
+            //   )
+            // }
+          >
             Let's talk &rarr;
           </button>
         </Link>

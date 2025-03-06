@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-.navbar.open{
+.navbar.open {
   background-color: #000000;
 }
 
@@ -63,12 +63,11 @@
   margin: 2px 0px;
 }
 
-.resumeLink{
+.resumeLink {
   align-self: flex-start;
 }
 
 .resumeButton {
-
   font-family: Fira Code;
   font-weight: 500;
   font-size: 16px;
@@ -82,7 +81,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .logo{
+  .logo {
     font-size: 48px;
     line-height: 60px;
   }
@@ -123,5 +122,6 @@
 
   .navItem:hover {
     transform: scale(1.1);
+    color: #cbfc2a;
   }
 }
