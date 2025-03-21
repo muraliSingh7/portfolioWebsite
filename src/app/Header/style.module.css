@@ -101,7 +101,7 @@
     width: 0px;
     height: 24px;
     border: 1px solid #31371f;
-    margin: 0px 10px;
+    margin: 0px;
   }
 
   .navbarNav {
@@ -109,7 +109,7 @@
     bottom: 0px;
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 32px;
     justify-content: flex-end;
     align-items: center;
     background: none;

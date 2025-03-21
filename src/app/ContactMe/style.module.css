@@ -61,6 +61,7 @@
 .formInputFieldIcon {
   margin: 0.75rem;
   width: 25px;
+  height: auto;
 }
 
 .formInput {

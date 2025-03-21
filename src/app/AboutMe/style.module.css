@@ -44,7 +44,7 @@
   font-family: Fira Code;
   font-weight: 500;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 28px;
   margin: 1rem 0%;
   text-align: left;
   color: #e3e5dc;
@@ -89,7 +89,7 @@
 
   .information {
     font-size: 20px;
-    line-height: 26.24px;
+    line-height: 32px;
   }
 
   .selfInformationContainer {

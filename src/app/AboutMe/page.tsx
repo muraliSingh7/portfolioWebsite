@@ -85,7 +85,7 @@ export default function AboutMe() {
             experience in building scalable web and mobile applications.
           </p>
 
-          <h4>I have worked on high-impact projects, such as:</h4>
+          <p>I have worked on high-impact projects, such as:</p>
           <ul>
             <li>
               <strong>GoldSmith AI</strong>: Designed and implemented a
@@ -93,9 +93,10 @@ export default function AboutMe() {
               engagement with AI integration.
             </li>
             <li>
-              <strong>Trawl International Solutions</strong>: Built a Dockerized
-              community platform that streamlined deployment processes and
-              enhanced collaboration for distributed teams.
+              <strong>Trawl International Solutions</strong>: Developed a CRM
+              platform designed to streamline the engagement process for
+              community members, enhancing communication and fostering stronger
+              connections.
             </li>
           </ul>
 
