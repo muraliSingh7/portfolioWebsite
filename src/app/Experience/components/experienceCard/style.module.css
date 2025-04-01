@@ -3,14 +3,14 @@
   position: relative;
   background-color: inherit;
   width: 80.2%;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
 }
 
 .companyName {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -18,7 +18,7 @@
 }
 
 .jobTitle {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -26,7 +26,7 @@
 }
 
 .dates {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 18px;
   line-height: 20.99px;

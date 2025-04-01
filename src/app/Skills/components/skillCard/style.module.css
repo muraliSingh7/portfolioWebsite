@@ -14,7 +14,7 @@
 }
 
 .skillName {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;

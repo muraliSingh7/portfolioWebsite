@@ -17,7 +17,7 @@
 .course_name {
   color: white;
   font-size: larger;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -26,13 +26,13 @@
 .institution_name {
   color: white;
   font-weight: 500;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   line-height: 24px;
   font-size: 16px;
 }
 
 .year_Of_Completion {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -99,7 +99,6 @@
     grid-template-rows: auto auto auto;
   }
 }
-
 
 @media only screen and (min-width: 1024px) {
   .card {
