@@ -7,7 +7,6 @@
 }
 
 .navbar {
-  z-index: 10;
   position: relative;
   padding: 8px 16px;
   background-color: #00000099;
@@ -38,7 +37,7 @@
 
 .navbarNav.open {
   display: flex;
-  z-index: 20;
+  z-index: 10;
   background-color: #000000;
   box-shadow: 0px 25px 25px 0px #00000026;
 }

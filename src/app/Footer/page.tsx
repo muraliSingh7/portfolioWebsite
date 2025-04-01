@@ -65,7 +65,7 @@ export default function Footer() {
         <div className={styles.contactDetails}>
           <div className={styles.telephone}>
             <FontAwesomeIcon icon={faPhone} className={styles.telephoneIcon} />
-            <Link href="tel:+917678068572">+91 7678068572</Link>
+            <Link href="tel:+917678068572">+917678068572</Link>
           </div>
           <div className={styles.email}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.emailIcon} />

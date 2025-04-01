@@ -5,8 +5,7 @@
   align-items: center;
   color: white;
 }
-.contactMeTitle{
-
+.contactMeTitle {
 }
 
 .contactImage {
@@ -100,13 +99,15 @@
   align-self: center;
 }
 
-.submitButton:hover {
-  box-shadow: 2px 2px 5px 0px #98e2ff;
-}
-
 @media only screen and (min-width: 320px) {
   .contactImageAndFormContainer {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .submitButton {
+    transform: translateX(300%);
   }
 }
 
@@ -153,6 +154,7 @@
     width: max-content;
     padding: 12px 16px;
     align-self: flex-start;
+    transform: translateX(200%);
   }
 }
 
@@ -186,6 +188,7 @@
 .contactImageEnterAnimation {
   animation: slideInFromLeft 1s ease 0s 1 normal forwards;
 }
+
 .submitButtonEnterAnimation {
   animation: slideInFromRight 1s ease 0.04s 1 normal forwards;
 }

@@ -3,14 +3,14 @@ import styles from "../ContactMe/style.module.css";
 import Image from "next/image";
 import emailImg from "../../../public/contactMe/email.png";
 import contactImg from "../../../public/contact1.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faHeadset,
-  faMessage,
-  faPhone,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faEnvelope,
+//   faHeadset,
+//   faMessage,
+//   faPhone,
+//   faUser,
+// } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useEffect, useMemo } from "react";
 
 export default function ContactMe() {
