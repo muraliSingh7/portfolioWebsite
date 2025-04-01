@@ -29,7 +29,7 @@
 }
 
 .title {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 32px;
   line-height: 41.98px;
@@ -40,7 +40,7 @@
 }
 
 .information {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
@@ -54,7 +54,7 @@
   background: #cbfc2a;
   border-radius: 10px;
   color: #161a0b;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 16px;
   line-height: 20.99px;

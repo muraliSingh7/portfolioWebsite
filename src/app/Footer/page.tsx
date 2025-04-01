@@ -14,10 +14,18 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import topmateLogo from "../../../public/topmate.png";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-inter",
+});
+
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <div className={`${styles.footer} ${inter.className}`}>
       <div className={styles.contactInfo}>
         <div className={styles.socialIconsContainer}>
           <Link

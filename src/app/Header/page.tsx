@@ -3,6 +3,13 @@ import styles from "./style.module.css";
 import hamburgerStyles from "./hamburgerMenu.module.css";
 import React, { MouseEvent, useEffect } from "react";
 import Link from "next/link";
+import { Cute_Font } from "next/font/google";
+
+const cuteFont = Cute_Font({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-cute",
+});
 
 export default function CustomNavbar() {
   const handleOnClick = (bodyElementID: String) => {
@@ -42,7 +49,7 @@ export default function CustomNavbar() {
 
   return (
     <nav className={styles.navbar}>
-      <p className={styles.logo}>{"<MS/>"}</p>
+      <p className={`${styles.logo} ${cuteFont.className}`}>{"<MS/>"}</p>
       <div className={hamburgerStyles.navIcon} onClick={handleToggle}>
         <span></span>
         <span></span>
@@ -84,11 +91,7 @@ export default function CustomNavbar() {
           target="_blank"
           className={styles.resumeLink}
         >
-          <button
-            className={styles.resumeButton}
-          >
-            Resume
-          </button>
+          <button className={styles.resumeButton}>Resume</button>
         </Link>
       </ul>
     </nav>

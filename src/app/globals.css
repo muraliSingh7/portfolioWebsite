@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 
 .sectionTitle {
   color: #ffffff;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 24px;
   line-height: 31.49px;
@@ -72,11 +72,11 @@ body::-webkit-scrollbar-thumb {
   align-self: stretch;
 }
 
-.sectionTitle.mobile{
+.sectionTitle.mobile {
   display: block;
 }
 
-.sectionTitle.largeScreen{
+.sectionTitle.largeScreen {
   display: none;
 }
 
@@ -95,12 +95,11 @@ body::-webkit-scrollbar-thumb {
     line-height: 41.98px;
   }
 
-  .sectionTitle.mobile{
+  .sectionTitle.mobile {
     display: none;
   }
 
-  .sectionTitle.largeScreen{
+  .sectionTitle.largeScreen {
     display: block;
   }
 }
-

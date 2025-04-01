@@ -32,7 +32,7 @@
 }
 
 .projectDescriptionContainer {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
@@ -44,7 +44,7 @@
 }
 
 .projectName {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -117,7 +117,6 @@
     height: 28px;
   }
 }
-
 
 @keyframes slideInFromLeft {
   from {

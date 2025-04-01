@@ -23,7 +23,7 @@
 }
 
 .label {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 1rem;
   line-height: 20px;
@@ -69,7 +69,7 @@
   font-size: 1rem;
   background-color: transparent;
   border: 0px solid;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -87,7 +87,7 @@
 .submitButton {
   background-color: #cbfc2a;
   color: #000000;
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 16px;
   line-height: 20.99px;

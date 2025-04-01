@@ -1,5 +1,5 @@
 .greeting {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 14px;
   line-height: 18.37px;
@@ -8,7 +8,7 @@
 }
 
 .heroTitle {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 700;
   font-size: 32px;
   line-height: 41.98px;
@@ -17,7 +17,7 @@
 }
 
 .heroDescription {
-  font-family: Fira Code;
+  font-family: var(--font-fira-code);
   font-weight: 500;
   font-size: 16px;
   line-height: 20.99px;
@@ -30,15 +30,14 @@
     font-size: 22px;
     line-height: 28.86px;
   }
-  
+
   .heroTitle {
     font-size: 56px;
     line-height: 73.47px;
   }
-  
+
   .heroDescription {
     font-size: 24px;
     line-height: 31.49px;
   }
-  
 }
