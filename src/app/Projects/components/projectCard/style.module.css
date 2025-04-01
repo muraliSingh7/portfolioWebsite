@@ -76,6 +76,7 @@
 
 @media screen and (min-width: 1024px) {
   .projectImg {
+    height: auto;
   }
 
   .projectCardContainer:nth-child(n + 3) {
