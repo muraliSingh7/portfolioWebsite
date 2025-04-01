@@ -1,15 +1,16 @@
 "use client";
 import styles from "../ContactMe/style.module.css";
 import Image from "next/image";
+import emailImg from "../../../public/contactMe/email.png";
 import contactImg from "../../../public/contact1.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faHeadset,
-  faMessage,
-  faPhone,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faEnvelope,
+//   faHeadset,
+//   faMessage,
+//   faPhone,
+//   faUser,
+// } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useEffect, useMemo } from "react";
 
 export default function ContactMe() {
@@ -99,7 +100,7 @@ export default function ContactMe() {
               Name
             </label>
             <div className={styles.formInputField}>
-              <FontAwesomeIcon icon={faUser} className={styles.formInputFieldIcon} />
+              {/* <FontAwesomeIcon icon={faUser} className={styles.formInputFieldIcon} /> */}
               <input
                 type="text"
                 placeholder="Name"
@@ -114,8 +115,9 @@ export default function ContactMe() {
               Email
             </label>
             <div className={styles.formInputField}>
-              <FontAwesomeIcon
-                icon={faEnvelope}
+              <Image
+                src={emailImg}
+                alt="Email"
                 className={styles.formInputFieldIcon}
               />
               <input
@@ -132,10 +134,10 @@ export default function ContactMe() {
               Phone
             </label>
             <div className={styles.formInputField}>
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={faPhone}
                 className={styles.formInputFieldIcon}
-              />
+              /> */}
               <input
                 type="tel"
                 placeholder="Phone"
@@ -150,10 +152,10 @@ export default function ContactMe() {
               Message
             </label>
             <div className={`${styles.formInputField} ${styles.formInputMessage}`}>
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={faMessage}
                 className={styles.formInputFieldIcon}
-              />
+              /> */}
               <input
                 type="text"
                 placeholder="Message"

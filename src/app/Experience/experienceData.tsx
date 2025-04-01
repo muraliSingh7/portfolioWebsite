@@ -5,7 +5,7 @@ const experienceData: ExperienceInfo[] = [
         companyName: 'Twenty (YC backed Salesforce alternative)',
         jobTitle: 'Open Source Contributor',
         startDate: `Dec'24`,
-        endDate: `Dec'24`,
+        endDate: `Feb'25`,
     },
     {
         companyName: 'GoldsmithAI',

@@ -41,13 +41,9 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
       }
     } else {
       if (index !== undefined && index % 2 === 0) {
-        target.classList.remove(
-          styles.projectCardEnteranceAnimationEvenChild
-        );
+        target.classList.remove(styles.projectCardEnteranceAnimationEvenChild);
       } else {
-        target.classList.remove(
-          styles.projectCardEnteranceAnimationOddChild
-        );
+        target.classList.remove(styles.projectCardEnteranceAnimationOddChild);
       }
     }
   };
@@ -64,8 +60,8 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
         alt={projectName}
       />
       <div className={styles.projectDetailsContainer}>
-        <h3 className={styles.projectName}>{projectName}</h3>
-        <div>
+        <p className={styles.projectName}>{projectName}</p>
+        <ul>
           {projectDescription.map((description, index) => (
             <li
               key={"description" + index}
@@ -74,7 +70,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
               {description}
             </li>
           ))}
-        </div>
+        </ul>
         <div className={styles.technologiesContainer}>
           {technologiesUsed.map((tech, index) => (
             <Chip key={"tech" + index} chipName={tech} />

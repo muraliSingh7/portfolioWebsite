@@ -76,7 +76,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
       }`}
     >
       <div className={styles.content}>
-        <h4 className={styles.companyName}>{companyName}</h4>
+        <p className={styles.companyName}>{companyName}</p>
         <p className={styles.jobTitle}>{jobTitle}</p>
         <p className={styles.dates}>
           {startDate} to {endDate}

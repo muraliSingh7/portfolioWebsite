@@ -3,7 +3,7 @@
     linear-gradient(180deg, #638000 0%, #000000 100%) border-box;
   border-radius: 16px;
   border: 1px solid transparent;
-  padding: 10px;
+  padding: 32px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: revert;
   width: 100%;
@@ -67,7 +67,6 @@
 
 @media only screen and (min-width: 768px) {
   .card {
-    padding: 10px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: revert;
@@ -104,7 +103,7 @@
 
 @media only screen and (min-width: 1024px) {
   .card {
-    padding: 10px;
+    padding: 16px;
     width: 100%;
     max-width: 1150px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
