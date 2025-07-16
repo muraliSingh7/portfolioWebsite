@@ -32,7 +32,7 @@ const useIntersectionObserver = (
         observer.unobserve(currentCardRef);
       }
     };
-  }, [cardRef, onIntersection]);
+  }, [cardRef, onIntersection, index]);
 };
 
 export default useIntersectionObserver;

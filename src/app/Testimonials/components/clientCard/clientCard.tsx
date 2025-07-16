@@ -10,7 +10,7 @@ import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 interface ClientCardProps {
   clientInfo: ClientInfo;
 }
-const clientCard: React.FC<ClientCardProps> = ({ clientInfo }) => {
+const ClientCard: React.FC<ClientCardProps> = ({ clientInfo }) => {
   const ratingArray = new Array(5).fill(0);
   const clientCardRef = useRef<HTMLDivElement>(null);
 
@@ -84,4 +84,4 @@ const clientCard: React.FC<ClientCardProps> = ({ clientInfo }) => {
   );
 };
 
-export default clientCard;
+export default ClientCard;

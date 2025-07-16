@@ -134,6 +134,7 @@
     display: block;
     width: 400px;
     height: 600px;
+    object-fit: cover;
   }
 
   .contactFormContainer {

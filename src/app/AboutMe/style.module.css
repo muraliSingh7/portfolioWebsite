@@ -26,6 +26,7 @@
   left: 8px;
   bottom: 8px;
   position: absolute;
+  object-fit: cover;
 }
 
 .title {

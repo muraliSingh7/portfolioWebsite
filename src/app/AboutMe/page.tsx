@@ -72,6 +72,7 @@ export default function AboutMe() {
             src={profilePic}
             alt="Picture of the author"
             className={styles.selfImage}
+            
           />
         </div>
       </div>
@@ -81,7 +82,7 @@ export default function AboutMe() {
         </p>
         <div ref={infoRef} className={styles.information}>
           <p>
-            Hi, I'm Murali Singh, a Fullstack Developer from India with
+            Hi, I&apos;m Murali Singh, a Fullstack Developer from India with
             experience in building scalable web and mobile applications.
           </p>
           <br />
@@ -100,24 +101,6 @@ export default function AboutMe() {
             </li>
           </ul>
           <br />
-          {/* <h4>Why I am a Great Fit for your team:</h4>
-          <ul>
-            <li>
-              <strong>Technical Proficiency</strong>
-            </li>
-            <li>
-              <strong>Remote Collaboration Expertise</strong>
-            </li>
-            <li>
-              <strong>Task-Driven, Not Bound by Fixed Hours</strong>
-            </li>
-            <li>
-              <strong>Results-Oriented Approach</strong>
-            </li>
-            <li>
-              <strong>Adaptable to Local Time Zones</strong>
-            </li>
-          </ul> */}
         </div>
 
         <Link
@@ -127,13 +110,8 @@ export default function AboutMe() {
           <button
             ref={contactRef}
             className={styles.contactMeButton}
-            // onClick={() =>
-            //   window.open(
-            //     "https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view"
-            //   )
-            // }
           >
-            Let's talk &rarr;
+            Let&apos;s talk &rarr;
           </button>
         </Link>
       </div>

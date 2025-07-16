@@ -85,14 +85,15 @@ export default function CustomNavbar() {
         >
           Contact Me
         </li>
-        <div className={styles.divider} />
+        <li className={styles.divider} />
+        <li className={styles.resumeLink}>
         <Link
           href="https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view"
           target="_blank"
-          className={styles.resumeLink}
         >
           <button className={styles.resumeButton}>Resume</button>
         </Link>
+        </li>
       </ul>
     </nav>
   );

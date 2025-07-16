@@ -3,8 +3,6 @@ import InstitutionCard from "./components/institutionCard/institutionCard";
 import secondarySchoolImage from "../../../public/education/secondarySchoolLogo.png";
 import higherSecondarySchoolImage from "../../../public/education/higherSecondarySchoolLogo.png";
 import collegeImage from "../../../public/education/KJSCE-Logo.svg";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Education() {
   return (
