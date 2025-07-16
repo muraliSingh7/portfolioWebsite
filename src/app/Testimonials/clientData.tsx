@@ -5,9 +5,9 @@ const clientData: ClientInfo[] = [
     name: "Tamir Passi",
     clientImage: user,
     review:
-      "Murali did a great job! He communication was thorough, professional, and frequent. He incorporated all the features that I requested. Ill work with him again.",
+      "Murali did a great job! He communication was thorough, professional, and frequent. He incorporated all the features that I requested. I'll work with him again.",
     rating: 5,
-    location: "Israel",
+    location: "Israel 🇮🇱",
   },
   {
     name: "Kevin Robinson",
@@ -15,7 +15,7 @@ const clientData: ClientInfo[] = [
     review:
       "Murali is a true professioanl. Fast, reliable and efficient. Went above and beyond to make the project more successful than planned. Was a pleasure working with him and will surely do that again on my next project",
     rating: 5,
-    location: "United States",
+    location: "United States 🇺🇸",
   },
 ];
 

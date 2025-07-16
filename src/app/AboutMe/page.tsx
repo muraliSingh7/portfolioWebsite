@@ -72,7 +72,6 @@ export default function AboutMe() {
             src={profilePic}
             alt="Picture of the author"
             className={styles.selfImage}
-            
           />
         </div>
       </div>
@@ -82,22 +81,18 @@ export default function AboutMe() {
         </p>
         <div ref={infoRef} className={styles.information}>
           <p>
-            Hi, I&apos;m Murali Singh, a Fullstack Developer from India with
-            experience in building scalable web and mobile applications.
+            Hi, I&apos;m Murali Singh. 
+            <span style={{display:"block"}}>A Fullstack Developer from India.</span>
+            <span style={{display:"block"}}>I build scalable web and mobile applications.</span>
           </p>
           <br />
-          <p>I have worked on high-impact projects, such as:</p>
+          <p>I have worked on what matters, such as:</p>
           <ul>
             <li>
-              <strong>GoldSmith AI</strong>: Designed and implemented a
-              ChatGPT-style chatbot from scratch, significantly improving user
-              engagement with AI integration.
+              <strong>GoldSmith AI</strong>: Designed and implemented a Chain-of-Thought (CoT) reasoning approach prior to ChatGPT's widespread adoption, significantly enhancing user engagement through advanced AI integration.
             </li>
             <li>
-              <strong>Trawl International Solutions</strong>: Developed a CRM
-              platform designed to streamline the engagement process for
-              community members, enhancing communication and fostering stronger
-              connections.
+              <strong>Trawl International Solutions</strong>: Created a CRM platform to streamline engagement, improve communication & grow connections that last.
             </li>
           </ul>
           <br />

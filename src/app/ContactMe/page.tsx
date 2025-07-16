@@ -87,15 +87,15 @@ export default function ContactMe() {
           method="POST"
           className={styles.contactFormContainer}
         >
-          <h1 className={`sectionTitle ${styles.contactMeTitle}`} >Let’s Build Something Awesome! &#128640;</h1>
+          <h1 className={`sectionTitle ${styles.contactMeTitle}`} >Let&apos;s begin. Let&apos;s build. &#128640;</h1>
           <div className={styles.formField}>
             <label htmlFor="name" className={styles.label}>
-              Name
+            Your Name
             </label>
             <div className={styles.formInputField}>
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="where it starts"
                 className={styles.formInput}
                 name="name"
                 required
@@ -104,7 +104,7 @@ export default function ContactMe() {
           </div>
           <div className={styles.formField}>
             <label htmlFor="email" className={styles.label}>
-              Email
+              Your Email
             </label>
             <div className={styles.formInputField}>
               <Image
@@ -114,7 +114,7 @@ export default function ContactMe() {
               />
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="your line of contact"
                 className={styles.formInput}
                 name="email"
                 required
@@ -123,12 +123,12 @@ export default function ContactMe() {
           </div>
           <div className={styles.formField}>
             <label htmlFor="phone" className={styles.label}>
-              Phone
+              Your Phone
             </label>
             <div className={styles.formInputField}>
               <input
                 type="tel"
-                placeholder="Phone"
+                placeholder="your signal"
                 className={styles.formInput}
                 name="phone"
                 required
@@ -137,12 +137,12 @@ export default function ContactMe() {
           </div>
           <div className={styles.formField}>
             <label htmlFor="message" className={styles.label}>
-              Message
+              Your Message
             </label>
             <div className={`${styles.formInputField} ${styles.formInputMessage}`}>
               <input
                 type="text"
-                placeholder="Message"
+                placeholder="your voice"
                 className={styles.formInput}
                 name="message"
                 required

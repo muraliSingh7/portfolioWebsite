@@ -14,8 +14,10 @@ export default function Hero() {
         from India
       </h1>
       <p className={styles.heroDescription}>
-        With 2 years of experience in web and mobile app development, I
-        specialize in full-stack development, delivering results remotely
+      2 years shaping web and mobile experiences.
+      <span style={{display:"block"}}>Full-stack at heart.</span>
+      <span style={{display:"block"}}>Working remotely, delivering what matters.</span>
+      <span style={{display:"block"}}>Code is my craft, results are my language.</span>
       </p>
     </div>
   );

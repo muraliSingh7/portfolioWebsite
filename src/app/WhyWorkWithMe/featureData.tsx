@@ -6,22 +6,22 @@ import bot from "../../../public/whyWorkWithMe/bot.png";
 const featureData: FeatureInfo[] = [
   {
     title: "Efficiency",
-    description: "Results over hours, always delivered.",
+    description: "Results arrive in hours. Always delivered.",
     image: lightning,
   },
   {
     title: "Collaboration",
-    description: "Seamless teamwork across timezones.",
+    description: "Teamwork that spans timezones. Seamless and natural.",
     image: globe,
   },
   {
     title: "Impact",
-    description: "Scalable solutions that drive success.",
+    description: "Solutions that scale, that drive success.",
     image: target,
   },
   {
     title: "Innovation",
-    description: "AI-powered, future ready development.",
+    description: "AI-powered, ready for what's next.",
     image: bot,
   },
 ];

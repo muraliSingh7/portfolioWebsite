@@ -7,7 +7,13 @@ import collegeImage from "../../../public/education/KJSCE-Logo.svg";
 export default function Education() {
   return (
     <div id="education" className="sectionContainer">
-      <h1 className="sectionTitle">My Education &#127891;</h1>
+      <div>
+        <h1 className="sectionTitle">My Education &#127891;</h1>
+        <p style={{ marginTop: "0.75rem",textAlign:"center" }}>We learn before we build.
+          <span style={{ display: "block" }}>The base matters.</span>
+          <span style={{ display: "block" }}>Knowledge is the start.</span>
+        </p>
+      </div>
       <div className={styles.educationContainer}>
         <InstitutionCard
           index={2}
