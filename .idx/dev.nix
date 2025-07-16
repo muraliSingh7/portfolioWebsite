@@ -2,6 +2,7 @@
   channel = "stable-25.05";
   packages = [
     pkgs.nodejs_22
+    pkgs.pnpm_9
   ];
   idx.extensions = [
     
