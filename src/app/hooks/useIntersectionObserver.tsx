@@ -7,11 +7,12 @@ type OnIntersectionCallback = (
 ) => void;
 
 const useIntersectionObserver = (
-  cardRef: React.RefObject<HTMLDivElement>,
+  cardRef: React.RefObject<HTMLDivElement | null>,
   onIntersection: OnIntersectionCallback,
   index?: number
 ) => {
   useEffect(() => {
+    if(!cardRef) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const isIntersecting = entry.isIntersecting;
