@@ -1,5 +1,4 @@
 import { ProjectInfo } from "./projectInfo";
-import ezlogo from "../../../public/projects/ezLogo.png";
 import earthlyEcoThumbnail from "../../../public/projects/earthlyEcoThumbnail.webp";
 import yelpcamp from "../../../public/projects/yelpcamp.png";
 import flight from "../../../public/projects/flight.png";
@@ -25,7 +24,7 @@ export const projectData: ProjectInfo[] = [
       "Razorpay powers the motion, payments without pause.",
       "An admin page keeps track.",
       "Inventory made simple.",
-      "We added a quiet layer:",
+      "I added a quiet layer:",
       "A Python service that listens.",
       "It emails when something shifts,",
       "A refund, a delivery, a moment.",
@@ -83,14 +82,14 @@ export const projectData: ProjectInfo[] = [
     ],
     projectDescription: [
       "The wild calls.",
-      "So we built a place to share stories, to review trails, to discover camps.",
+      "So I built a place to share stories, to review trails, to discover camps.",
       "A home for adventurers.",
       "Responsive layouts, crafted with care using media queries.",
       "Endpoints, wired for CRUD operations on MongoDB, speaking through Express.",
       "Middleware, guarding every route, locking it tight with JWT-based authentication.",
       "Every piece built for trust, speed, clarity.",
-      "We didn't just build a site.",
-      "We built a campfire.",
+      "I didn't just build a site.",
+      "I built a campfire.",
       "You bring the stories."
     ],
     codeLink: "https://github.com/muraliSingh7/campingWebsite",
@@ -117,7 +116,7 @@ export const projectData: ProjectInfo[] = [
       "ForerunnerDB powers the filters.",
       "Auto-search glides through names with debounced inputs, ensuring smooth skies.",
       "From airport to airport.",
-      "We let users move how they want.",
+      "I let users move how they want.",
       "No noise. Just motion."
     ],    
     codeLink: "https://github.com/muraliSingh7/toursandtravels",

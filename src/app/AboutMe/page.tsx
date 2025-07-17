@@ -89,7 +89,7 @@ export default function AboutMe() {
           <p>I have worked on what matters, such as:</p>
           <ul>
             <li>
-              <strong>GoldSmith AI</strong>: Designed and implemented a Chain-of-Thought (CoT) reasoning approach prior to ChatGPT's widespread adoption, significantly enhancing user engagement through advanced AI integration.
+              <strong>GoldSmith AI</strong>: Designed and implemented a Chain-of-Thought (CoT) reasoning approach prior to ChatGPT&apos;s widespread adoption, significantly enhancing user engagement through advanced AI integration.
             </li>
             <li>
               <strong>Trawl International Solutions</strong>: Created a CRM platform to streamline engagement, improve communication & grow connections that last.
